@@ -4,10 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practice Page</title>
+    <!-- <link rel="stylesheet" media="all" href="/styles/style_practice.css" type="text/css">
+     -->
+    <link rel="stylesheet" href="/styles/style_practice.css">
 </head>
 <body>
-    <nav>
-        <a href="main.html">About Me</a>
+    <nav id="navbar">
+        <ul class="nav-links">
+            <li><a href="main.html">About Me</a></li>
+        </ul>
     </nav>
 
     <main>
@@ -35,27 +40,32 @@
             <header>
                 <h2>First Blog Post</h2>
                 <p>
-                    Almost done with week 1 of learning frontend engineering to job! <br>
-                    Published on <time datetime="2025-04-11">April 11, 2025</time> by Andrew Tran.
+                    Progressing with week 1 of learning frontend engineering to job! Learning basic HTML fundamentals and how to structure the content. Using the DOM (Document Object Model) and semantic HTML for accessibility.<br>
+                    Published on <time datetime="2025-04-28">April 28, 2025</time> by Andrew T.
                 </p>
             </header>
-            <footer>
-                <p>Comments (0)</p>
-            </footer>
         </article>
 
-        <div>
-            <h1>Welcome to My Webpage</h1>
-            <p>This is a paragraph with <strong>bold text</strong> and <em>italic text</em>.</p>
-            <ul>
-              <li>Item 1</li>
-              <li>Item 2</li>
-            </ul>
-        <div>
+        <article id="blogpost2">
+            <header>
+                <h2>Second Blog Post</h2>
+                <p>
+                    Week 2 of learning frontend engineering. Learning CSS styling and layout fundamentals, such as the box model, flexbox, grid layout, and styling the portfolio. <br>
+                    Published on <time datetime="2025-05-06">May 06, 2025</time>
+                </p>
+            </header>
+        </article>
 
+        <section>
+            <h2>Buttons</h2>
+            <button class="button1">BUTTON ONE</button>
+            <button class="button2">BUTTON TWO</button>
+            <button class="button3">BUTTON THREE</button>
+        </section>
+        
         <p>
-            Tables
-            <table>
+            <h2>Tables</h2>
+            <table class="table-example">
                 <caption>Red Rising Characters</caption>
                 <thead>
                     <tr>
@@ -65,16 +75,40 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Cassius</td>
-                        <td>au Bellona</td>
+                        <td>Sevro</td>
+                        <td>au Barca</td>
                     </tr>
                     <tr>
                         <td>Darrow</td>
                         <td>au Augustus</td>
                     </tr>
+                    <tr>
+                        <td>Virginia</td>
+                        <td>au Augustus</td>
+                    </tr>
                 </tbody>
             </table>
         </p>
+
+        <!-- card layout -->
+        <div class="card">
+            <!-- <img src="image.png" alt="image"> -->
+            <div class="card-content">
+                <h3>Card Title</h3>
+                <p>This is a card layout example. It can be used to display information in a visually appealing way.</p>
+            </div>
+        </div>
+
+        <!-- grid layout practice  -->
+
+        <div class="grid-container">
+            <div class="item1">grid item 1</div>
+            <div class="item2">grid item 2</div>
+            <div>grid item 3</div>
+            <div>grid item 4</div>
+            <div>grid item 5</div>
+            <div>grid item 6</div>
+        </div>
 
         <article id="feedback_response">
             If you have any feedback to make this better:
@@ -84,6 +118,7 @@
                 <input type="submit" value="Submit">
             </form>
         </article>
+
     </main>
 
     <footer>

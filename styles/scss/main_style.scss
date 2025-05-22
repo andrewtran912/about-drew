@@ -1,0 +1,136 @@
+// imports 
+
+@import 'variables';
+@import 'mixin';
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+h2 {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+body {
+    font-family: $font-family;
+    background-color: $secondary-color;
+    color: $primary-color;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    padding: 1em 0;
+    background-color: $primary-color;
+    color: $secondary-color;
+    @include box-shadow(0 2px 4px $primary-color);
+    
+    h1 {
+        margin: 0;
+        font-size: 2em;
+    }
+}
+
+nav {
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        li {
+            display: inline;
+            margin-right: $default-gap;
+        }
+    }
+    a {
+        color: $secondary-color;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+#hero {
+    padding: $default-gap;
+    a {
+        text-decoration: none;
+        color: $primary-color;
+        &:hover {
+            color: $terciary-color;
+            cursor: pointer;
+        }
+    }
+}
+
+#about {
+    padding: $default-gap;
+}
+
+.skills-list {
+    list-style: none;
+    display: inline-flex;
+    gap: $default-gap;
+}
+
+#projects {
+    padding: $default-gap;
+}
+
+.projects {
+    background-color: $secondary-color;
+    border: 1px solid $primary-color;
+    padding: $default-gap;
+    margin-bottom: $default-gap;
+    h3 {
+        margin-top: 0;
+    }
+}
+
+#contact {
+    padding: $default-gap;
+    a {
+        text-decoration: none;
+        &:hover {
+            color: $terciary-color;
+        }
+    }
+}
+
+footer {
+    background-color: $primary-color;
+    color: $secondary-color;
+    text-align: center;
+    padding: 10px 0;
+    bottom: 0;
+    width: 100%;
+    img {
+        width: 30px;
+        height: auto;
+        @include rounded-corners;
+    }
+}
+
+.footer-links {
+    text-align: center;
+    list-style: none;
+    display: inline-flex;
+    gap: $default-gap;
+    margin-right: $default-gap;
+    a {
+        text-decoration: none;
+        color: $secondary-color;
+        &:hover {
+            cursor: pointer;
+            color: $terciary-color;
+        }
+    }
+}
